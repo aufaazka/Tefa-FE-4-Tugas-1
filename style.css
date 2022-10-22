@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo:400,700&display=swap');
+body{
+    background-color: antiquewhite;
+    font-family: 'Arimo', sans-serif;
+}
+.nav{
+    text-align: center;
+}
+table{
+    margin: auto;
+    width: 90%;
+}
+/* style Content video - START*/
+.content_video{
+  width: max-content  ;
+}
+video{
+    width: 100%;
+    max-width: 600px;
+}
+.video p{
+    /* margin: 0px 10px; */
+    background-color: aqua;
+    width: 50%;  
+}
+
+/* style Content video - END*/
+/* style Tab profil - START */
+.content_tab{
+  margin-left: -10%;
+}
+h2{
+    color:#000;
+    text-align:center;
+    font-size:2em;
+  }
+  .tab_profil{
+    display:flex;
+    flex-direction: column;
+    align-items: center;  
+  }
+  .tabs{
+    margin-left: 13%;
+  }
+  .tab{
+    cursor: pointer;
+    padding:10px 20px;
+    margin:0px 5px;
+    background:#000;
+    width: 13%;
+    display:inline-block;
+    color:#fff;
+    border-radius:3px 3px 0px 0px;
+    box-shadow: 0 0.5rem 0.8rem #00000080;
+  }
+  .panels{
+    background:#fffffff6;
+    box-shadow: 0 2rem 2rem #00000080;
+    min-height:200px;
+    width:100%;
+    max-width:600px;
+    border-radius:3px;
+    overflow:hidden;
+    padding:20px;  
+  }
+  .panel{
+    display:none;
+    animation: fadein .8s;
+  }
+  .img{
+    width: 100%;
+  }
+  @keyframes fadein {
+      from {
+          opacity:0;
+      }
+      to {
+          opacity:1;
+      }
+  }
+  .panel-title{
+    font-size:1.5em;
+    font-weight:bold;
+  }
